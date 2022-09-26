@@ -46,6 +46,7 @@ const PeopleSchema = new mongoose.Schema({
   title: String
 });
 
+const People = mongoose.model("People", PeopleSchema);
 ///////////////////////////////
 // MIDDLEWARE
 ////////////////////////////////
