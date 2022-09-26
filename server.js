@@ -108,7 +108,7 @@ app.put("/people/:id", async (req, res) => {
       await People.findByIdAndUpdate(req.params.id, req.body, { new: true })
     );
   } catch (error) {
-    //send error
+    //send error code 400
     res.status(400).json(error);
   }
 });
